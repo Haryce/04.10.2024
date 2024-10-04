@@ -2,9 +2,10 @@
 using namespace std;
 int main() {
     setlocale(LC_ALL, "Russian");
-    int sec;
-    cout << "Введите количество секунд, прошедших с начала дня: ";
+    int sec; //переменная для получения данныз пользователя
+    cout << "Введите количество секунд прошедших с начала дня: ";
     cin >> sec;
+    //переменные которые будет считать сколько прошло с начала дня
     int total_seconds_in_day = 86400; // 24 * 60 * 60
     int seconds_left = total_seconds_in_day - sec;
     int hours_left = seconds_left / 3600;
